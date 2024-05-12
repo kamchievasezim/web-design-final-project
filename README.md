@@ -1,2 +1,2 @@
 # web-design-final-project
-kamchievasezim/final-project-web-design
+The website showcases ten of the most successful women entrepreneurs using a combination of HTML, CSS, and JavaScript.
