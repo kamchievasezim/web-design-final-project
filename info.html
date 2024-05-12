@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Information</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nanum+Pen+Script&family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="character-info-container">
+  <div class="character-info">
+    <img src="" alt="Character Image" id="character-img">
+    <div class="character-text" id="character-text"></div>
+  </div>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const character = params.get('character');
+
+  const characterImg = document.getElementById('character-img');
+  const characterText = document.getElementById('character-text');
+
+  if (character === 'character1') {
+    characterImg.src = 'images/whitney_wolfe.jpg';
+    characterText.innerHTML = `
+      <h2>Whitney Wolfe Herd</h2>
+      <p>Whitney Wolfe Herd is not just one of the most successful women entrepreneurs in history, but one who's actively reshaping the online dating landscape with a focus on women taking charge. The founder, former CEO, and current Executive Chair of Bumble, she launched the now immensely popular dating app known for its "women make the first move" policy to shift the dynamics of the online dating world and bring more people together online. The move would lead to her becoming the youngest woman to ever take a company public in the United States (at age 31) and the world's youngest female billionaire at the time. Under her leadership, Bumble has grown into a global platform with over 100 million users, expanding beyond dating with Bumble BFF for friendships and Bumble Bizz for professional networking.</p>
+    `;
+   } 
+   else if (character === 'character2') {
+    characterImg.src = 'images/Melanie Perkins.webp';
+    characterText.innerHTML = `
+      <h2>Melanie Perkins</h2>
+      <p>Melanie Perkins is an Australian billionaire best known for revolutionising graphic design accessibility with a little company you might have heard of called Canva. While studying graphic design at the University of Western Australia, she recognized the complexity of traditional design software and wanted to do something about it. This sparked the vision for Canva – a platform that allows one to create professional-looking designs, regardless of experience, and she launched the company In 2013 alongside her partner Cliff Obrecht and friend Cameron Adams. Despite initial investor scepticism due to its Australian origin, Canva's user-friendly interface, drag-and-drop functionality, and a vast library of templates gained immense popularity. The company has grown exponentially, boasting over 60 million monthly users and attracting companies like Intel and Zoom to their paid plans.</p>
+    `;
+   } 
+   else if (character === 'character3') {
+    characterImg.src = 'images/Anne Boden.jpg';
+    characterText.innerHTML = `
+      <h2>Anne Boden</h2>
+      <p>Anne Boden is a name synonymous with innovation and a breath of fresh air in the often-stagnant world of FinTech. As the founder and former CEO of Starling Bank, the UK's first mobile-only bank built entirely from scratch, she shattered the glass ceiling and became the first woman in history to establish a bank in the UK. Boden's background wasn't typical for a fintech founder. Holding senior positions at Allied Irish Banks and the Royal Bank of Scotland (RBS), she witnessed the shortcomings of the existing banking system during the financial crisis of 2008. Based on her background in computer science, she saw an opportunity for app-based real-time finance management; Starling Bank has been a key player in this space since 2014.</p>
+    `;
+   } 
+   else if (character === 'character4') {
+    characterImg.src = 'images/Kiran Mazumdar-Shaw.jpg';
+    characterText.innerHTML = `
+      <h2>Kiran Mazumdar-Shaw</h2>
+      <p>Kiran Mazumdar-Shaw is a name synonymous with Indian biotechnology. She's not just a billionaire entrepreneur, but a visionary leader who built a life sciences powerhouse from scratch. After graduating with a zoology and brewing science degree, she intended to work in fermentation technology,  but a chance encounter with an Irish entrepreneur interested in enzymes for textiles led her to start Biocon in 1978 in her garage with just two employees. Biocon began by producing industrial enzymes and gradually expanded into pharmaceuticals, focusing on affordability and accessibility. Under Kiran's leadership, it became a pioneer in biosimilars, making complex generic versions of biologic drugs, and increasing access for patients worldwide.</p>
+    `;
+   } 
+   else if (character === 'character5') {
+    characterImg.src = 'images/Reshma Saujani.jpg';
+    characterText.innerHTML = `
+      <h2>Reshma Saujani</h2>
+      <p>As the founder of GirlsWho Code, Reshma Saujani's path to success in the tech world is a unique one. While many focus on building companies, Saujani's passion lies in empowering girls and women through technology.  She graduated from Yale Law School and initially pursued a career in law and politics running for Congress in 2010 and becoming the first Indian-American woman to do so.  It was this experience that instilled in her the importance of advocacy and social change. Saujani launched Girls Who Code to address the lack of female representation in tech, which today has reached over 450,000 girls in all 50 US states and across over 20 countries.  The organization offers free coding programs, after-school clubs, and workshops, all designed to introduce girls to the exciting world of technology.</p>
+    `;
+   } 
+   else if (character === 'character6') {
+    characterImg.src = 'images/Sheryl Sandberg.jpg';
+    characterText.innerHTML = `
+      <h2>Sheryl Sandberg</h2>
+      <p>Sheryl Sandberg is a force to be reckoned with in the tech industry.  She's not only a highly successful entrepreneur but also a prominent author and advocate for women in leadership. Sandberg's most recognizable role was as the Chief Operating Officer (COO) of Meta from 2008 to 2022.  While Sheryl Sandberg stepped down from her COO role at Meta in 2022, her influence on the tech industry and her work towards gender equality continue to be significant.  Beyond Facebook, Sandberg is the founder of LeanIn.Org, a non-profit organization that empowers women to achieve their ambitions.  She's also the author of two best-selling books, "Lean In: Women, Work, and the Will to Lead" and "Lean In For Graduates," which address gender barriers in the workplace. As one of the highest-ranking women in the tech industry, Sandberg has paved the way for future generations of female leaders.  Her success story serves as a powerful inspiration. Sandberg remains a prominent figure and a role model for aspiring entrepreneurs, particularly women, looking to make their mark in the ever-evolving world of technology. </p>
+    `;
+   } 
+   else if (character === 'character7') {
+    characterImg.src = 'images/Susan Wojcicki.jpg';
+    characterText.innerHTML = `
+      <h2>Susan Wojcicki</h2>
+      <p>Susan Wojcicki is a famous female entrepreneur in the tech world, most recognized for her leadership as the former CEO of YouTube (2014-2023). Her journey to success is interwoven with the rise of Google and YouTube itself. Wojcicki played a crucial role in Google's early days, renting out her garage to serve as the company's first office space in 1998, and later became Google's 16th employee. She played a key role in building Google's advertising business, including AdSense and Google Analytics, and her understanding of user behaviour was instrumental in making these platforms what they are today. </p>
+    `;
+   } 
+   else if (character === 'character8') {
+    characterImg.src = 'images/Guan Dian.jpg';
+    characterText.innerHTML = `
+      <h2>Guan Dian</h2>
+      <p>Guan Dian is the co-founder of Patsnap, which provides research and development (R&D) analytics powered by AI and machine learning. Dian co-founded Patsnap in 2007, which started as a small team and grew into a leading patent analytics company. Patsnap's technology helps businesses gain insights into markets, technologies, and competitors, making informed R&D decisions. As the Senior Vice President (SVP) for Asia Pacific, Dian was instrumental in establishing Patsnap's presence in this key region. This included securing the company's first Chinese clients, a crucial step for its international growth that transformed it into a dominant force in the R&D analytics market.</p>
+    `;
+   } 
+   else if (character === 'character9') {
+    characterImg.src = 'images/Anne Wojcicki.jpg';
+    characterText.innerHTML = `
+      <h2>Anne Wojcicki</h2>
+      <p>Anne Wojcicki is the co-founder and CEO of 23andMe, a leading personal genomics company. Launched in 2006, 23andMe offers direct-to-consumer genetic testing, allowing individuals to explore their ancestry and gain insights into potential health risks. Since then, Wojcicki has steered 23andMe towards financial stability through a combination of consumer testing and partnerships, ensuring the company's long-term impact. She also recognized the power of crowdsourced data. 23andMe's large customer base allows for large-scale genetic studies, aiding researchers in developing new treatments and therapies.</p>
+    `;
+   } 
+   else if (character === 'character10') {
+    characterImg.src = 'images/Sarah Hawley.jpg';
+    characterText.innerHTML = `
+      <h2>Sarah Hawley</h2>
+      <p>Sarah Hawley is a serial entrepreneur – having founded 8 companies since 2009 and had three successful, million-dollar exits. She helped build Grow My Team from the ground up, launching an incredibly successful recruiting company dedicated to hiring and integrating the best remote talent on a global scale. Today, however, she’s best known for her role as the CEO and Founder of Growmotely – the first global platform for sourcing, growing and leading remote teams. Hawley’s journey with remote working began long before that, though. Sarah turned all her companies remote in 2014, which was a move that would set her on a trajectory that finds her now at the forefront of the remote work meets conscious culture and conscious leadership movement. A move that now has the potential to impact people all across the globe.</p>
+    `;
+   } 
+  
+</script>
+</body>
+</html>

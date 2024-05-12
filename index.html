@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Successful Women</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nanum+Pen+Script&family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Successful women entrepreneurs</h1>
+    </header>
+    <div class="container">
+        <div class="character-box">
+            <img src="images\whitney_wolfe.jpg" alt="Whitney Wolfe Herd img">
+            <div class="character-name">Whitney Wolfe Herd</div>
+            <div class="more-btn" onclick="showCharacterInfo('character1')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Melanie Perkins.webp" alt="Melanie Perkins img">
+            <div class="character-name">Melanie Perkins</div>
+            <div class="more-btn" onclick="showCharacterInfo('character2')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Anne Boden.jpg" alt="Anne Boden img">
+            <div class="character-name">Anne Boden</div>
+            <div class="more-btn" onclick="showCharacterInfo('character3')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Kiran Mazumdar-Shaw.jpg" alt="Kiran Mazumdar-Shaw img">
+            <div class="character-name">Kiran Mazumdar-Shaw</div>
+            <div class="more-btn" onclick="showCharacterInfo('character4')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Reshma Saujani.jpg" alt="Reshma Saujani img">
+            <div class="character-name">Reshma Saujani</div>
+            <div class="more-btn" onclick="showCharacterInfo('character5')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Sheryl Sandberg.jpg" alt="Sheryl Sandberg img">
+            <div class="character-name">Sheryl Sandbergi</div>
+            <div class="more-btn" onclick="showCharacterInfo('character6')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Susan Wojcicki.jpg" alt="Susan Wojcicki img">
+            <div class="character-name">Susan Wojcicki</div>
+            <div class="more-btn" onclick="showCharacterInfo('character7')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Guan Dian.jpg" alt="Guan Dian img">
+            <div class="character-name">Guan Dian</div>
+            <div class="more-btn" onclick="showCharacterInfo('character8')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Anne Wojcicki.jpg" alt="Anne Wojcicki  img">
+            <div class="character-name">Anne Wojcicki</div>
+            <div class="more-btn" onclick="showCharacterInfo('character9')">More</div>
+        </div>
+        <div class="character-box">
+            <img src="images\Sarah Hawley.jpg" alt="Sarah Hawley img">
+            <div class="character-name">Sarah Hawley</div>
+            <div class="more-btn" onclick="showCharacterInfo('character10')">More</div>
+        </div>
+    </div>
+<script>
+  function showCharacterInfo(character) {
+    window.location.href = 'info.html?character=' + character;
+  }
+</script>
+</body>
+</html>
